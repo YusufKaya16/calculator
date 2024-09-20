@@ -1,0 +1,65 @@
+$body-background-color: #696969;
+$title-background-color: #ACA7A7;
+$light-gray: #ACA7A7;
+$text-dark-color: #000;
+$operator-background-color: #FCBA0C;
+$number-background-color: #454545;
+
+.btn-bg-gray {
+    background: $light-gray !important;
+    color: $text-dark-color !important;
+}
+
+.btn-bg-operator {
+    background: $operator-background-color !important;
+}
+
+.btn-number-bg {
+    background: $number-background-color !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: $body-background-color;
+
+    #calculator {
+        width: min(360px, 95%);
+        border-radius: 1rem;
+        box-shadow: 2px 10px 15px black;
+
+        .card-header {
+            border-radius: inherit;
+            background: $title-background-color;
+
+        }
+
+        #display {
+            resize: none;
+            text-align: right;
+        }
+
+        #calculator-button {
+            .btn {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                box-shadow: none;
+                font-weight: 600;
+
+                &:hover {
+                    opacity: .5;
+                }
+            }
+        }
+    }
+}
+

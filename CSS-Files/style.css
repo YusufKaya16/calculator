@@ -1,0 +1,49 @@
+.btn-bg-gray {
+  background: #ACA7A7 !important;
+  color: #000 !important;
+}
+
+.btn-bg-operator {
+  background: #FCBA0C !important;
+}
+
+.btn-number-bg {
+  background: #454545 !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #696969;
+}
+body #calculator {
+  width: min(360px, 95%);
+  border-radius: 1rem;
+  box-shadow: 2px 10px 15px black;
+}
+body #calculator .card-header {
+  border-radius: inherit;
+  background: #ACA7A7;
+}
+body #calculator #display {
+  resize: none;
+  text-align: right;
+}
+body #calculator #calculator-button .btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: none;
+  font-weight: 600;
+}
+body #calculator #calculator-button .btn:hover {
+  opacity: 0.5;
+}/*# sourceMappingURL=style.css.map */

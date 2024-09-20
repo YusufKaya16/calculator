@@ -1,0 +1,22 @@
+*** Calculator Notes ***
+
+
+closest() methodu:
+
+-> bu metodun kullanım amacı calculator üzerinde yapılan click event dinlemesinde, oluşan event closest metoduna verilen parametreye göre mesela button ise işlemlere devam etsin, eğer click eventi button dışında bir element üzerinde oluşursa işlemlere devam etmeyecektir.
+
+closest metodu parametre olarak aldığı element tagname'i en yakın olanı aramak için dolaşır.
+
+dataset property: data-* (* -> istenilen isim)
+-> html elementlerine dataset kullanarak ek özellikler atanabilir.
+Calculator uygulamasında kullanım amacım farklı özelliklerde bulunan buttonlar vardır. Bazı buttonların içeriği işlem operatoru, bazıları normal numara buttonlarıdır.
+dataset property'lerini kullanarak numara buttonları ve operator buttonlarına ayrı ayrı type vererek JS dosyasında hangi type button'a basıldıysa ona göre işlem yaptırabiliriz.
+
+ işlem operator button -> data-type = 'operator'
+ numara button -> data-type = 'number'
+
+ data-type ismi, baştaki data sabit type kısmı istenildiği gibi değiştirilebilir.
+ data-type -> data-button-type
+
+
+
